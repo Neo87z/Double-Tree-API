@@ -40,10 +40,10 @@ function App() {
       
         <section>
           <Switch>
-            <Route path="/login" component={login} />
+            <Route exact path="/" component={login} />
             <Route path="/register" component={register} />  
             <Route path="/profile" component={profile} />  
-            <Route path="/room" component={room} />  
+            <Route path="/room" component={room} exact={true}/>  
             <Route path="/reserve" component={reseve} />   
             <Route path="/myReservations" component={MyReservations} />    
             <Route path="/addRoom" component={AddRoom} />    
